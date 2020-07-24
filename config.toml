@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://robertocanton.com"
 languageCode = "en-us"
-title = "Liva | Personal blog template"
+title = "Roberto Canton"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
@@ -45,35 +45,61 @@ disqusShortname = ""
   
   # main menu
   [[menu.main]]
+  name = "Home"
+  URL = "/"
+  weight = 1
+
+  # main menu
+  [[menu.main]]
   name = "About"
   URL = "about"
-  weight = 1
+  weight = 2
   
   [[menu.main]]
-  name = "Post"
+  identifier = "blog"
+  name = "Blog"
   URL = "blog"
+  weight = 3
+
+  [[menu.main]]
+  identifier = "en"
+  parent = "blog"
+  name = "English"
+  URL = "blog/en"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "es"
+  parent = "blog"
+  name = "Español"
+  URL = "blog/es"
   weight = 2
   
   [[menu.main]]
   name = "Contact"
   URL = "contact"
-  weight = 3
+  weight = 4
 
   # footer menu
   [[menu.footer]]
   name = "About"
   URL = "about"
   weight = 1
-  
+
   [[menu.footer]]
-  name = "Post"
-  URL = "blog"
+  name = "Blog - English"
+  URL = "blog/en"
   weight = 2
+
+  [[menu.footer]]
+  name = "Blog - Español"
+  URL = "blog/es"
+  weight = 3
   
   [[menu.footer]]
   name = "Contact"
   URL = "contact"
-  weight = 3
+  weight = 4
 
 
 #################### default parameters ################################
@@ -102,33 +128,33 @@ copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All 
   enable = true
 
 ############################ news letter ########################
-[params.newsletter]
-enable = true
-title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+#[params.newsletter]
+#enable = true
+#title = "Join Our Newsletter"
+#content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
 
 ############################# social site ########################
 [[params.social]]
 title = "facebook"
 icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.facebook.com/rjcanton/"
 
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/vmrcanton"
 
-[[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
+#[[params.social]]
+#title = "instagram"
+#icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+#link = "#"
 
 [[params.social]]
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/rcanton"
 
 [[params.social]]
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://linkedin.com/in/roberto-canton-vmw"
