@@ -78,7 +78,7 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "images/rc-logo.png"
+logo = "images/rcanton-logo.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
@@ -86,9 +86,9 @@ author = "Themefisher"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+mobile = "+17707151247"
+email = "roberto.j.canton@gmail.com"
+location = "Pembroke Pines, Florida, USA"
 # copyright
 copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
 
