@@ -1,167 +1,104 @@
 ---
-title: "How To Use Checklists To Improve Your UX"
-date: 2019-10-29T10:07:47+06:00
+title: "¿Qué es VMware Cloud on AWS?"
+date: 2019-06-25T10:07:47+06:00
 draft: false
 
 # post thumb
-image: "images/featured-post/post-1.jpg"
+image: "images/blog/vmc.png"
 
 # meta description
-description: "this is meta description"
+description: "VMware Cloud on AWS"
 
 # taxonomies
 categories: 
-  - "Android And Gmaing"
+  - "vmware"
+  - "cloud"
+  - "aws"
 tags:
-  - "Photos"
-  - "Game"
-  - "React"
-  - "Python"
-  - "New"
+  - "vmware"
+  - "cloud"
+  - "aws"
 
 # post type
 type: "featured"
+
+#Socialshare
+socialshare: false
 ---
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+# ¿Qué es VMware Cloud on AWS?
 
-<hr>
+En el mes de Octubre del año 2016, VMware y Amazon Web Services (AWS) anunciaron en conjunto una alianza estratégica para traer al mercado una solución que fué diseñada en conjunto por ingenieros de las dos empresas llamado VMware Cloud on AWS.
 
-##### Emphasis
+Este anuncio tomó a la industria por sorpresa pues hasta ese momento todos consideraban a ambas empresas competencia de la otra. Pero si evaluamos las razones de ésta alianza, hace mucho sentido:
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+VMware por un lado es el líder en virtualización y lo ha sido por muchos años, abarcando aproximadamente el 80% del mercado de virtualización y de lo que llamamos la nube privada.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Amazon Web Services (AWS) por el otro lado es el líder de servicios de nube pública y ha logrado mantenerse como el líder en la industria en lo que respecta a servicios de nubes públicas.
 
-Combined emphasis with **asterisks and _underscores_**.
+A pesar de que estas dos empresas, líderes en sus respectivos mercados, han tenido un nivel de éxito díficil de igualar por otros, no han podido penetrar por sí solos el mercado de el otro. VMware por un lado ha tratado de penetrar el mundo de nubes públicas sin mucho éxito en el pasado, y AWS simplemente no ha tenido presencia dentro de los Centros de Datos privados, aún con todo el éxito que han tenido con sus servicios de nube pública. Esta alianza, cuando se observa desde este punto de vista, hace mucho sentido para las dos empresas.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+## **Software Defined Data Center (SDDC) de VMware
 
-<hr>
+![SDDC](../../../images/blog/sddc.jpg)
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+VMware tiene una serie de productos para poder virtualizar todos los aspectos de un centro de datos privado:
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+**vSphere** - El hipervisor que hizo a VMware famoso y que hasta el día de hoy no ha podido ser igualado en el mercado. Este es el producto insignia de VMware y permite virtualizar el área de computos de un centro de datos.
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+**NSX** - Producto para poder virtualizar la operación e infraestructura de redes adentro de un centro de datos.
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+**VSAN** - Producto que permite virtualizar la parte de almacenamientos de un centro de datos.
 
-[You can use numbers for reference-style link definitions][1]
+Estos tres productos forman parte de la estrategia que VMware nos ha venido evangelizando por unos años llamada "Software Defined Data Center" (SDDC), o el Centro de Datos Basado en Software. Tecnologías que permiten automatizar las funciones de un centro de datos para poder obtener más agilidad en las áreas de virtualización de computos, redes (y seguridad), y almacenamiento.
 
-Or leave it empty and use the [link text itself].
+VMware Cloud on AWS básicamente es compuesto de éstas tecnologías de VMware (el SDDC de VMware) entregado como un servicio en la nube de AWS.
 
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
+---
 
-Some text to show that the reference links can follow later.
+## **¿Qué beneficios nos ofrece VMware Cloud on AWS?**
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+![VMConAWS](../../../images/blog/vmcaws.png)
 
-<hr>
+***1. Consistencia y familiaridad de tecnologías de VMware.***
 
-##### Paragraph
+La mayoría de clientes que hoy administran un centro de datos privado, están acostumbrados a tecnologías de VMware para administrar sus máquinas virtuales, ya sea a través de vCenter, o de las herramientas de vRealize Suite. Esta familiaridad es importante al momento de evaluar una nube pública pues la manera de operar o administrar un ambiente en un servicio de nube pública no es necesariamente el mismo, y estas diferencias en tecnologías y/o herramientas pueden demorar una migración hacia la nube pública.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
+***2.   Fácil portabilidad de cargas de trabajo y capacidades híbridas.***
 
-<hr>
+Todas las nubes públicas ofrecen la capacidad de correr una máquina virtual, pero el proceso de migrar una máquina virtual de una nube privada que usualmente corre en el hipervisor de VMware hacia una nube pública, la cual corre un hipervisor diferente, puede ser costoso, dificultoso,  y no siempre funciona bien aún cuando una máquina se migre exitosamente. VMware Cloud on AWS corre el mismo hipervisor de VMware que clientes corren en sus centros de datos privados, lo cual permite la fácil migración de máquinas virtuales sin necesidad de convertir éstas máquinas a otros formatos para que sean compatibles con otro hipervisor al momento de migrarlas. En otro post, les platicaré más a fondo sobre las opciones que tenemos para migrar dichas máquinas y los diferentes métodos disponibles.
 
-##### List
+Pero migrar hacia la nube, a pesar de todas estas dificultades se puede hacer, pero ¿Cómo migramos éstas máquinas virtuales de regreso a nuestro centro de datos privado en un futuro si es necesario? Aquí es dónde el poder híbrico de VMware Cloud on AWS resalta sobre cualquier otra opción, pues así de simple como se migró una máquina virtual hacia la nube, así de simple podemos migrar dicha máquina de regreso a nuestro centro de datos privado.
 
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
+***3. Acceso directo al poder de servicios nativos de AWS.***
 
-##### Unordered List
+AWS ofrece alrededor de más de 100 servicios de el lado nativo de sus servicios. No sólo por proximidad pero también por el poder de comunicación entre los dos ambientes. Esto nos permite poder interactuar con casi cualquier servicio de el lado de AWS nativo para poder aprovechar muchas de las capacidades de estos servicios y que puedan interactuar o comunicarse con máquinas virtuales que corren en VMware Cloud on AWS.
 
-* List item
-* List item
-* List item
-* List item
-* List item
+---
 
-<hr>
+## **¿Cómo funciona VMware Cloud on AWS?**
 
-##### Code and Syntax Highlighting
+![SDDC2](../../../images/blog/sddc-vmc.png)
 
-Inline `code` has `back-ticks around` it.
+Podemos observar la gráfica de el lado izquierdo tenemos nuestro centro de datos, ó nuestra nube privada corriendo en tecnologías de VMware. Al centro podemos observar el servicio de VMware Cloud on AWS corriendo encima de infraestructura de AWS, lo cual básicamente significa que la suite de productos de virtualización de VMware corre encima de servidores bare-metal de AWS. Estos son los mismos servidores que AWS utiliza para correr muchos de los servicios nativos que ellos ofrecen como proveedor de nube pública. Al lado derecho también observamos los servicios nativos de AWS corriendo sobre la misma infraestructura que el ambiente de VMware Cloud on AWS lo cual permite a los dos ambientes interactuar y comunicarse entre sí.
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
+### **Hybrid Linked Mode**
 
-<hr>
+Cómo podemos observar, vCenter está expuesto en el servicio para que clientes puedan tener la misma herramienta a la que están acostumbrados en su ambiente on-premises para administrar sus ambientes. Pero también hay una doble flecha que conecta nuestro vCenter on-premises con el vCenter de VMware Cloud on AWS, ¿qué significa esto? se preguntarán.
 
-##### Blockquote
+Hybrid Linked Mode es una nueva tecnología que nació con éste servicio el cual nos permite conectar nuesto vCenter on-premises con el vCenter de VMware Cloud on AWS para poder administrar los dos ambientes desde la misma ventanilla y no tener que estar administrando los dos ambientes desde dos ventanillas o pestañas de navegador. Escribiré en más detalles sobre Hybrid Linked Mode en otro post, así que estén atentos a ese blog.
 
-> This is a blockquote example.
+### **Elastic Network Interface (ENI)**
 
-<hr>
+También podrán observar una doble flecha conectando el ambiente de VMware Cloud on AWS con los servicios nativos de AWS. Esto pasa durante la construcción del ambiente de VMware Cloud on AWS a través de una tecnología disponible de el lado de AWS llamada Elastic Network Interfaces (ENI), la cual pueden leer más información haciendo click [aquí](https://docs.aws.amazon.com/es_es/AWSEC2/latest/UserGuide/using-eni.html).
 
-##### Inline HTML
+Me gusta comparar este ENI como una tubería de agua que suple los dos ambientes. La tubería está instalada pero para que el agua fluya tanto de un lado como del otro, necesitamos abrir las llaves de cada lado. Esto se hace a través de reglas de Firewall tanto de un lado como del otro para que la información fluya libremente entre los dos ambientes.
 
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
+---
 
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
+En otros posts entraré más a fondo sobre otras capacidades de éste servicio cómo los modelos de consumo, cómo el servicio es diferente a un ambiente de VMware on-premises y otros temas importantes para entender las capacidades de este servicio.
 
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+Gracias por leer este blog, y estén atentos a otros blogs. Siéntase libre de dejar un comentario, un saludo, o alguna sugerencia de algún tema del cuál le gustaría que escribiera.
 
+Saludos y un fuerte abrazo.
 
-<hr>
-
-##### Tables
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
