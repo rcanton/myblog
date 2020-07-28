@@ -7,14 +7,20 @@ draft: false
 image: "images/rcanton.jpg"
 
 # meta description
-description: "this is meta description"
+description: "Roberto Cantón"
 
 # type
 type : "about"
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+My name is Roberto Cantón.
 
-consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+I live in Pembroke Pines, FL, USA, just a tad northwest of Miami and southwest of Ft. Lauderdale, FL.
 
-nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+I'm a Cloud Solutions Architect at VMware currently supporting the Azure VMware Solution (AVS). I've been with VMware since 2013 in different roles. Started as a pre-sales vCloud Air SE, then moved to the pre-sales VMware Cloud on AWS SE group, more recently I was part of the Cloud Services Incubation Team. 
+
+I have more than 20 years of experience in IT, 16 of those working either directly or indirectly with virtualization and cloud technologies. 
+
+I'm also part of the Office of the CTO Ambassador program at VMware and co-lead the Latinos@VMware Atlanta chapter.
+
+All the views expressed on this site and in my social media personas are mine and not those of my employer.
