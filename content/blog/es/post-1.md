@@ -2,6 +2,7 @@
 title: "¿Qué es VMware Cloud on AWS?"
 date: 2019-06-25T10:07:47+06:00
 draft: false
+author: Roberto Canton
 
 # post thumb
 image: "images/blog/vmc.png"
@@ -11,7 +12,7 @@ description: "VMware Cloud on AWS"
 
 # taxonomies
 categories: 
-  - "vmware"
+  - 'VMware'
   - "cloud"
   - "aws"
 tags:
